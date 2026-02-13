@@ -1,6 +1,7 @@
 # PlatformIO-versioning
 ### Purpose :  
-Add a versioning number to your PlatformIO project, following the Semantic Versioning (SemVer) rules.  
+Add a versioning number to your PlatformIO project, following the Semantic Versioning (SemVer) rules :  
+MAJOR.MINOR.PATCH  
   
 ### Usage :  
 At each compiling, the patch version increments by one.  
