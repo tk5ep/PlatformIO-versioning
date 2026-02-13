@@ -9,15 +9,15 @@ If the major field is changed, the minor and patch version are reset to 0.
 
 The minor and major changes can be made by hand, editing the first line of the **version.h** file or by runing the script :   
 Increment Patch (Bugs correction) :  
-```python autoincrement.py```
+```python autoincrement.py```  
 (Ex: 1.1.5 → 1.1.6)  
 
 Increment Minor (New fonctionnality) :  
-```python autoincrement.py --minor```
+```python autoincrement.py --minor```  
 (Ex: 1.1.5 → 1.2.0)  
 
 Increment Major (Change major) :  
-```python autoincrement.py --major```
+```python autoincrement.py --major```  
 (Ex: 1.1.5 → 2.0.0)  
 
 Install:  
