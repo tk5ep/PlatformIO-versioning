@@ -35,19 +35,15 @@ Increment Major (Change major) :
   
 Result : The file **version.h** will, at each compling, contain the following variables that can be recalled in your scripts.  
     
-#define VERSION "0.0.0+4"  
+#define VERSION "0.1.0"  
 #define VERSION_MAJOR 0  
 #define VERSION_MINOR 0  
 #define VERSION_PATCH 0  
-#define VERSION_BUILD 4  
 #define VERSION_DATE "2026-02-13"  
 #define VERSION_TIME "11:28"  
 #define VERSION_FULL "0.0.0+4 2026-02-13 11:28"  
 
-You can manually edit this file and change the VERSION numbers, for example:  
-#define VERSION_ MAJOR 1  
-
-Idea found here  
+Idea found here:
 (https://stackoverflow.com/questions/56923895/auto-increment-build-number-using-platformio)  
 But severely reworked to have a versioning like MAJOR.MINOR.PATCH  
 END
