@@ -8,7 +8,7 @@ I have corrected some bugs to make it work.
 
 How to use it :  
   
-1) Create a file src/version.h containing or copy the one in this repository.
+1) Create a file src/version.h containing or copy the one in this repository.  
 ```#define VERSION "0.0.0+0"```
   
 3) Put this in a source file  
