@@ -1,17 +1,24 @@
 # PlatformIO-versioning
-Add a compiling versioning to you PlatformIO project
+Purpose : Add a versioning number to your PlatformIO project.   
+  
+Idea found here  
+(https://stackoverflow.com/questions/56923895/auto-increment-build-number-using-platformio)  
 
-Idea found here and corrected some bugs
-(https://stackoverflow.com/questions/56923895/auto-increment-build-number-using-platformio)
+I have corrected some bugs to make it work.  
 
-1) Make the file src/version.h  
+How to use it :  
+  
+1) Create a file src/version.h containing or copy the one in this repository.
 ```#define VERSION "0.0.0+0"```
-2) Put this in a source file  
+  
+3) Put this in a source file  
 ```#include "version.h"```
-3) Add the autoincrement.py file in the project root
-4) In platformio.ini, add this to your device  
-```extra_scripts = post:autoincrement.py```
-
+  
+4) Add the autoincrement.py file in the project root
+     
+5) In platformio.ini, add this to your device :  
+```extra_scripts = post:autoincrement.py```  
+  
 The file **version.h** will, at each compling, contain the following variables that can be recalled in your scripts.  
 You can manually edit the file and change the VERSION numbers.  
   
