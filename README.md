@@ -49,4 +49,5 @@ The file **version.h** will, at each compling, contain the following variables t
 #define VERSION_TIME "11:28"  
 #define VERSION_FULL "0.1.0 2026-02-13 11:28"  
 
-Ex:   Serial.println("Project version: " + String(VERSION_FULL));
+Ex:   Serial.println("Project version: " + String(VERSION_FULL));  
+I hope this helps... Let me know.
