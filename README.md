@@ -13,6 +13,7 @@ Idea found here and corrected some bugs
 ```extra_scripts = post:autoincrement.py```
 
 The file **version.h** will, at each compling, contain the following variables that can be recalled in your scripts.  
+You can manually edit the file and change the VERSION numbers.  
   
 #define VERSION "0.0.0+4"  
 #define VERSION_MAJOR 0  
