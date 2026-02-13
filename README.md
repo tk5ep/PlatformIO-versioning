@@ -44,9 +44,4 @@ The file **version.h** will, at each compling, contain the following variables t
 #define VERSION_PATCH 0  
 #define VERSION_DATE "2026-02-13"  
 #define VERSION_TIME "11:28"  
-#define VERSION_FULL "0.0.0+4 2026-02-13 11:28"  
-
-Idea found here:
-(https://stackoverflow.com/questions/56923895/auto-increment-build-number-using-platformio)  
-But severely reworked to have a versioning like MAJOR.MINOR.PATCH  
-END
+#define VERSION_FULL "0.0.0+4 2026-02-13 11:28"
