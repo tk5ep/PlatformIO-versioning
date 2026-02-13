@@ -28,7 +28,7 @@ Displaying the version is done by running the script with --get parameter :
 1) In your /src folder, create a file **version.h** containing the following line (or copy the one in this repository).  
 ```#define VERSION "0.1.0"```
 Or if you have already started your project, write your actuel version, like 1.0.0 for example.  
-Or simply let the script create the initial file at first run if it does not find it in the /src. folder.  
+Or simply let the script create the initial file at first run if it does not find it in the /src. folder. It will have v0.1.1  
   
 3) Put this line in the head of your source file :   
 ```#include "version.h"```
