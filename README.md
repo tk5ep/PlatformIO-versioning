@@ -8,17 +8,17 @@ At each compiling, the patch version increments by one.
 
 If the minor field is changed, the patch is reset to 0.  
 If the major field is changed, the minor and patch versions are reset to 0.  
-The minor and major changes can be made by hand, editing the first line of the **version.h** file or by running the script:   
+The minor and major changed can be made by hand, editing the first line of the **version.h** file or by running the script:   
 
 Increment Patch (Bugs correction) :  
 ```python autoincrement.py```  
 (Ex: 1.1.5 → 1.1.6)  
 
-Increment Minor (New fonctionnality) :  
+Increment Minor (New functionality) :  
 ```python autoincrement.py --minor```  
 (Ex: 1.1.5 → 1.2.0)  
 
-Increment Major (Change major) :  
+Increment Major (Major change) :  
 ```python autoincrement.py --major```  
 (Ex: 1.1.5 → 2.0.0) 
 
@@ -28,8 +28,8 @@ Displaying the version is done by running the script with --get parameter :
 ### Install:    
 1) In your /src folder, create a file **version.h** containing the following line (or copy the one in this repository).  
 ```#define VERSION "0.1.0"```  
-Or if you have already started your project, write your actuel version, like 1.0.0 for example.  
-Or simply let the script create the initial file at first run if it does not find it in the /src. folder. It will have version 0.1.1  
+Or if you have already started your project without a versioning, write your actual version guess, like 1.0.0 for example.  
+Or simply, the script automatically generates an initial version (0.1.0) if no file is found in /src during the first compilation.  
   
 3) Put this line in the head of your source file :   
 ```#include "version.h"```
