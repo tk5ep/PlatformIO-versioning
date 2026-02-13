@@ -1,8 +1,8 @@
 # PlatformIO-versioning
-Purpose :  
+###Purpose :  
 Add a versioning number to your PlatformIO project.  
   
-Use :  
+###Use :  
 At each compiling, the patch version increments by one.  
 If the minor field is changed, the patch is reset to 0.  
 If the major field is changed, the minor and patch version are reset to 0.  
@@ -20,7 +20,7 @@ Increment Major (Change major) :
 ```python autoincrement.py --major```  
 (Ex: 1.1.5 → 2.0.0)  
 
-Install:  
+###Install:    
 1) In your /src folder, create a file **version.h** containing the following line (or copy the one in this repository).  
 ```#define VERSION "0.1.0"```
   
