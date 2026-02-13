@@ -4,10 +4,11 @@ Add a versioning number to your PlatformIO project.
   
 ### Usage :  
 At each compiling, the patch version increments by one.  
+
+The minor and major changes can be made by hand, editing the first line of the **version.h** file or by running the script.  
 If the minor field is changed, the patch is reset to 0.  
 If the major field is changed, the minor and patch version are reset to 0.  
 
-The minor and major changes can be made by hand, editing the first line of the **version.h** file or by runing the script :   
 Increment Patch (Bugs correction) :  
 ```python autoincrement.py```  
 (Ex: 1.1.5 → 1.1.6)  
