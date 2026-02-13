@@ -12,14 +12,15 @@ Idea found here and corrected some bugs
 4) In platformio.ini, add this to your device  
 ```extra_scripts = post:autoincrement.py```
 
-This will generate variables than can be recalled :  
-#define VERSION "0.0.1+68"  
+The file **version.h** will, at each compling, contain the following variables that can be recalled in your scripts.  
+  
+#define VERSION "0.0.0+4"  
 #define VERSION_MAJOR 0  
 #define VERSION_MINOR 0  
-#define VERSION_PATCH 1  
-#define VERSION_BUILD 68  
-#define VERSION_DATE "2022-11-27"  
-#define VERSION_TIME "23:35"  
-#define VERSION_FULL "0.0.1+68 2022-11-27 23:35"  
+#define VERSION_PATCH 0  
+#define VERSION_BUILD 4  
+#define VERSION_DATE "2026-02-13"  
+#define VERSION_TIME "11:28"  
+#define VERSION_FULL "0.0.0+4 2026-02-13 11:28"  
 
 END
