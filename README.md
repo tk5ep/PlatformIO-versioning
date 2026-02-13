@@ -28,19 +28,19 @@ Displaying the version is done by running the script with --get parameter :
 ### Install:    
 1) In your /src folder, create a file **version.h** containing the following line (or copy the one in this repository).  
 ```#define VERSION "0.1.0"```  
-Or if you have already started your project without a versioning, write your actual version guess, like 1.0.0 for example.  
-Or simply, the script automatically generates an initial version (0.1.0) if no file is found in /src during the first compilation.  
+Or if you have already started your project without a versioning, you can start with a version guess, and replace the number with 1.0.0 for example.  
+Or simply, let the script automatically generate the file with an initial version (0.1.0) if no file is found in /src during the first compilation.  
   
 3) Put this line in the head of your source file :   
 ```#include "version.h"```
   
-4) Add the **autoincrement.py** file in the project root.  
+4) Add the **autoincrement.py** file in the project root directory.  
      
-5) In **platformio.ini**, add this to your device :  
+5) In **platformio.ini**, add the following to your device :  
 ```extra_scripts = post:autoincrement.py```  
   
 ### Result :
-The file **version.h** will, at each compling, contain the following variables that can be recalled in your scripts.  
+The file **version.h** will, at each compling, contain the following variables that can be recalled by your scripts.  
     
 #define VERSION "0.1.0"  
 #define VERSION_MAJOR 0  
@@ -50,5 +50,5 @@ The file **version.h** will, at each compling, contain the following variables t
 #define VERSION_TIME "11:28"  
 #define VERSION_FULL "0.1.0 2026-02-13 11:28"  
 
-Ex:   Serial.println("Project version: " + String(VERSION_FULL));  
+Ex: Serial.println("Project version: " + String(VERSION_FULL));  
 I hope this helps... Let me know.
