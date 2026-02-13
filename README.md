@@ -24,8 +24,10 @@ Increment Major (Change major) :
 ### Install:    
 1) In your /src folder, create a file **version.h** containing the following line (or copy the one in this repository).  
 ```#define VERSION "0.1.0"```
+Or if you have already started your project, write your actuel version, like 1.0.0 for example.  
+Also, the script will create the initial file if it does not find it in the /src. folder.  
   
-3) Put this in a source file  
+3) Put this line in the head of your source file :   
 ```#include "version.h"```
   
 4) Add the **autoincrement.py** file in the project root
@@ -33,7 +35,8 @@ Increment Major (Change major) :
 5) In **platformio.ini**, add this to your device :  
 ```extra_scripts = post:autoincrement.py```  
   
-Result : The file **version.h** will, at each compling, contain the following variables that can be recalled in your scripts.  
+### Result :
+The file **version.h** will, at each compling, contain the following variables that can be recalled in your scripts.  
     
 #define VERSION "0.1.0"  
 #define VERSION_MAJOR 0  
