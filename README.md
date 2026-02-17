@@ -4,14 +4,15 @@ Add a versioning number to your PlatformIO project, following the Semantic Versi
 MAJOR.MINOR.PATCH  
   
 ### Usage :  
-At each compiling, the patch version increments by one.  
+At each compiling, the patch version increments by one.
+When PlatformIO is compiling, the resulting HEX file is renamed with the version number.
 
 If the minor field is changed, the patch is reset to 0.  
 If the major field is changed, the minor and patch versions are reset to 0.  
 The minor and major changed can be made by hand, editing the first line of the **version.h** file or by running the script:   
 
 Increment Patch (Bugs correction) :  
-```python autoincrement.py```  
+```python autoincrement.py --patch```  
 (Ex: 1.1.5 → 1.1.6)  
 
 Increment Minor (New functionality) :  
@@ -51,4 +52,8 @@ The file **version.h** will, at each compling, contain the following variables t
 #define VERSION_FULL "0.1.0 2026-02-13 11:28"  
 
 Ex: Serial.println("Project version: " + String(VERSION_FULL));  
+
+The compiled hex file is renamed :  
+**firmware_v0.1.0_pro8MHzatmega328**
+
 I hope this helps... Let me know.
