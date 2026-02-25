@@ -1,5 +1,5 @@
 # PlatformIO-versioning  
-PlatformIO versioning scripts written in Python for renaming the compiled hex file after a version number following following the Semantic Versioning (SemVer) rules :
+PlatformIO versioning scripts written in Python for renaming the compiled hex file after a version number following the Semantic Versioning (SemVer) rules :
 MAJOR.MINOR.PATCH  
   
 Two versions of versionings are available here :  
