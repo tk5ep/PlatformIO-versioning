@@ -11,7 +11,8 @@ MAJOR.MINOR.PATCH
     -D VERSION_MAJOR=0  
     -D VERSION_MINOR=1  
     -D VERSION_PATCH=0  
-extra_scripts = pre:rename_firmware.py```  
+extra_scripts = pre:rename_firmware.py
+```  
 
 ### Usage :  
 When PlatformIO is compiling, the resulting HEX file is renamed with the version number.  
