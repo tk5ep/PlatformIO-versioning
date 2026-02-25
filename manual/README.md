@@ -33,7 +33,7 @@ The compiled hex file is renamed like this :
 
 The version number and build time can be called inside a script :
 Example :  
-    // Display the vesion  
+    // Display the version  
     Serial.print("Version : ");  
     Serial.print(VERSION_MAJOR);  
     Serial.print(".");  
