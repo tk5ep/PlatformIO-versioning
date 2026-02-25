@@ -7,7 +7,8 @@ MAJOR.MINOR.PATCH
 1) Add the **rename_firmware.py** file in the project root directory.  
      
 2) In **platformio.ini**, add the following to your device :  
-```build_flags =   
+```
+build_flags =   
     -D VERSION_MAJOR=0  
     -D VERSION_MINOR=1  
     -D VERSION_PATCH=0  
